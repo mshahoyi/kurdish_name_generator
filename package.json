@@ -1,0 +1,23 @@
+{
+	"name": "kurdish_name_generator",
+	"version": "1.0.0",
+	"description": "A handy tool to generate random kurdish mock names",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"test": "jest --watchAll",
+		"build": "rm -rf dist && node_modules/.bin/tsc",
+		"prepare": "npm run build"
+	},
+	"keywords": [
+		"mock",
+		"kurdish",
+		"generator"
+	],
+	"author": "Mohammed Y. Shahoe <+9647508949100>",
+	"license": "ISC",
+	"devDependencies": {
+		"jest": "^26.5.3",
+		"typescript": "^4.0.3"
+	}
+}

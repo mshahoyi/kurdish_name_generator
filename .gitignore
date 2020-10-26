@@ -1,0 +1,6 @@
+todo
+.vscode
+.env
+dist
+package-lock
+node_modules
