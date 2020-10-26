@@ -1,6 +1,6 @@
 {
 	"name": "kurdish_name_generator",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A handy tool to generate random kurdish mock names",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
