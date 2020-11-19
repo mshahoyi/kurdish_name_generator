@@ -19,5 +19,3 @@ export const generateNameInLatin = (withRandomNumber: boolean = true) => {
 		withRandomNumber ? radomN : undefined,
 	].join("-");
 };
-
-console.log(generateNameInLatin(true));
