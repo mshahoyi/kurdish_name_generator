@@ -1,5 +1,5 @@
 const firstWords = {
-	latin: ["kisal", "kak", "jwan", "dlbar"],
+	latin: ["kisal", "kak", "dlbar"],
 	aramaic: [],
 };
 
@@ -9,11 +9,15 @@ const secondWords = {
 };
 
 export const generateNameInLatin = (withRandomNumber: boolean = true) => {
-	const firstWordIndex = Math.random() * firstWords.latin.length;
-	const secondWordIndex = Math.random() * secondWords.latin.length;
+	const firstWordIndex = parseInt(String(Math.random() * firstWords.latin.length));
+	const secondWordIndex = parseInt(String(Math.random() * secondWords.latin.length));
+	const radomN = parseInt(String(Math.random() * 10000));
+
 	return [
-		`${firstWordIndex}${"i"}`,
-		secondWordIndex,
-		withRandomNumber ? Math.random() * 10000 : undefined,
+		`${firstWords.latin[firstWordIndex]}${"i"}`,
+		secondWords.latin[secondWordIndex],
+		withRandomNumber ? radomN : undefined,
 	].join("-");
 };
+
+console.log(generateNameInLatin(true));
